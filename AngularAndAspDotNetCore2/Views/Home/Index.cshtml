@@ -1,0 +1,22 @@
+﻿<my-app>
+    <img src="img/ajax_small.gif" />  Please wait ...
+</my-app>
+<!-- Core JS Files   -->
+<script src="/js/jquery/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="/js/bootstrap/tether.min.js"></script>
+<script src="/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- App JS Files   -->
+<!-- load the dependencies -->
+<script src="lib/core-js/client/shim.js" type="text/javascript"></script>
+<script src="lib/zone.js/dist/zone.js" type="text/javascript"></script>
+<script src="lib/reflect-metadata/Reflect.js" type="text/javascript"></script>
+
+<!-- load our angular app with systemjs -->
+<script src="lib/systemjs/dist/system.src.js" type="text/javascript"></script>
+<script src="systemjs.config.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+    System.import('app/main.js').catch(function (err) { console.error(err); });
+</script>  
